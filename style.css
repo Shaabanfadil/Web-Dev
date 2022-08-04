@@ -1,17 +1,35 @@
 * {
-    text-align: right;
+    /* text-align: right; */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); */
 
 body{
-    background-image: url(img/zamalek_Logo.png);
+    /* background-image: url(img/zamalek_Logo.png); */
     background-size: cover;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
-    font-weight: 300;
+    margin: 0;
+    
 }
 
+p {
+    color: #000;
+    line-height: 30px;
+    font-style: italic;
+    /* font-weight: bold; */
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif, Courier, monospace;
+}
+h1{
+    font-family: fantasy;
+    font-size: 3em;
+    border-bottom: 8px double red;
+    border-right: 8px double red;
+    width: 400px;
+    text-align: center;
+    box-shadow: 4px 4px 5px #888888;
+}
 
 h1 div > p{
     color: rgb(8, 6, 6);
@@ -22,9 +40,14 @@ h1 div > p{
 
 h1 p {
     text-align: center;
+   
+}
+
+h2 p {
+    color: #ffff;
 }
 h2 + p {
-    color: rgb(8, 6, 6);
+    /* color: rgb(8, 6, 6); */
     text-align: center;
     border: 5px solid rgba(255, 176, 170, .5);
     cursor: pointer;
@@ -39,24 +62,22 @@ h2 + p:hover {
 
 }
 
-p {
-    color: slategrey;
-    line-height: 30px;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 150%;
-    font-family: 'Ubuntu',sans-serif, Courier, monospace;
-}
 
 li {
     list-style: none;
     display: inline-block;
 }
-.container{
+.container {
     background-color: cadetblue;
-    width: 300px;
-    height: 500px;   
+  
 }
+
+.flexbox_container {
+     display: flex;/* important  */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 aside{
     float: right;
 }
@@ -73,4 +94,38 @@ aside{
 }
 #div2{
     background-color: rgba(255, 0, 0, .3);
+}
+
+img {
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    transition: all 1s;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+ /* must add property clear:both; after a tag with float property => look img tag above */
+footer{
+    background-color: rgb(229 24 24);;
+    text-align: center;
+    color: #ffff;
+    clear: both;
+}
+
+.boxmodel{
+    border: 5px double red;
+    display: inline-block;
+    padding: 20px;
+    margin: 0px 20px;
+}
+
+span{
+    font-size: 2em;;
+}
+
+span img {
+    padding: 20px;
 }
